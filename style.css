@@ -1,0 +1,14 @@
+body {
+    max-width: 375px;
+    height: auto;
+    margin: 0px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #3c3a39;
+    padding-top: 50px;
+  }
+  
