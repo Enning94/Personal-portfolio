@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 375px;
+  width: 100%;
+  height: 100%;
   margin: 0;
 }
 
@@ -7,18 +14,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: #3c3a39;
-  padding-top: 50px;
+  background-color: #3c3a39;
+  width: 100%;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Odibee Sans", cursive;
 }
 
 .headline {
   display: flex;
+  background-image: url("./illustration.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 0px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  background-color: #1c1a19;
+  height: 100vh;
   padding: 120px 24px;
   gap: 12px;
-  background: #1c1a19;
-  height: 590px;
 }
 
 .primary-text {
@@ -56,8 +69,7 @@ body {
   display: flex;
   text-align: center;
   flex-direction: row;
-  width: 200px;
-  height: 40px;
+  list-style-type: none;
 }
 
 .git {
@@ -93,10 +105,4 @@ body {
   height: 40px;
   padding: 8px;
   border-radius: 8px;
-}
-
-.illustration {
-  position: absolute;
-  left: 229px;
-  top: 335px;
 }
