@@ -1,14 +1,101 @@
 body {
-    max-width: 375px;
-    height: auto;
-    margin: 0px;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: #3c3a39;
-    padding-top: 50px;
-  }
-  
+  max-width: 375px;
+  height: auto;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #3c3a39;
+  padding-top: 50px;
+}
+/*.logo {
+
+}
+.menu {
+ 
+}*/
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 12px;
+  background: #1c1a19;
+  height: 590px;
+}
+.primary-text {
+  color: #ff6b00;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  margin: 0;
+}
+.supporting-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  align-items: center;
+  color: #fff5e1;
+}
+.description {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.social-media {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  padding: 0px;
+  width: 200px;
+  height: 40px;
+}
+.git {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.linkedin {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.angelist {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.twitter {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.vector {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.illustration {
+  position: absolute;
+  left: 229px;
+  top: 335px;
+}
