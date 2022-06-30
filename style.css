@@ -25,7 +25,7 @@ body {
   display: flex;
   background-image: url("./illustration.png");
   background-repeat: no-repeat;
-  background-position: bottom 0px right 0px;
+  background-position: bottom 0 right 0;
   flex-direction: column;
   align-items: center;
   background-color: #1c1a19;
