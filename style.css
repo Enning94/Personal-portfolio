@@ -3,7 +3,6 @@ body {
   height: auto;
   margin: 0px;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -11,13 +10,6 @@ body {
   background: #3c3a39;
   padding-top: 50px;
 }
-/*.logo {
-
-}
-.menu {
- 
-}*/
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -37,7 +29,7 @@ body {
   margin: 0;
 }
 .supporting-text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -47,15 +39,14 @@ body {
   color: #fff5e1;
 }
 .description {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   margin: 0;
 }
-
 .social-media {
   display: flex;
   text-align: center;
