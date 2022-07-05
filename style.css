@@ -411,10 +411,6 @@ body {
   justify-content: center;
 }
 
-.form-li {
-  width: 100%;
-}
-
 .form-ul {
   width: 100%;
   text-align: center;
@@ -458,7 +454,7 @@ body {
   background-color: #ff6b00;
   color: #fff;
   letter-spacing: 3%;
- align-items: center;
+  align-items: center;
 }
 
 .form-butt:hover {
