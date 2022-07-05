@@ -458,7 +458,7 @@ body {
   background-color: #ff6b00;
   color: #fff;
   letter-spacing: 3%;
-  width: 131px;
+ align-items: center;
 }
 
 .form-butt:hover {
