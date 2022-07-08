@@ -277,6 +277,7 @@
 
   .butt1:hover {
     background-color: brown;
+    transition: all 1s;
   }
 
   .card-container {
