@@ -109,6 +109,20 @@
     line-height: 32px;
     color: #fff;
     margin: 0;
+    animation-duration: 3s;
+    animation-name: description-slide;
+  }
+
+  @keyframes description-slide {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .social-media {
@@ -277,6 +291,7 @@
 
   .butt1:hover {
     background-color: brown;
+    transition: all 1s ease-in-out;
   }
 
   .card-container {
