@@ -176,6 +176,7 @@
     padding-top: 24px;
     height: 448px;
   }
+
   .placeholder {
     width: 684px;
     height: 100%;
@@ -273,7 +274,8 @@
     background-color: #ff6b00;
     color: #fff;
   }
-  .butt1:hover{
+
+  .butt1:hover {
     background-color: brown;
   }
 
@@ -291,7 +293,6 @@
     display: flex;
     flex-direction: column;
     width: 369px;
-    /* height: 435px; */
     padding-top: 76px;
     gap: 14px;
     background-image: url("./img/card-bg1.png");
