@@ -156,12 +156,14 @@
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
+    width: 315px;
     line-height: 52px;
     color: #091e42;
   }
 
   .underline {
     align-self: center;
+    width: 794px;
   }
 
   .title-container {
@@ -172,29 +174,38 @@
     gap: 24px;
     justify-content: center;
     padding-top: 24px;
+    height: 448px;
+  }
+  .placeholder {
+    width: 684px;
+    height: 100%;
   }
 
   .title-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
     color: #091e42;
-    align-items: center;
+    width: 448px;
+    height: 348px;
   }
 
   .title {
     font-family: "Crete Round", serif;
     font-weight: 400px;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 48px;
   }
 
   .supporting-text2 {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 400;
     width: 327px;
+    width: 448px;
+    height: 140px;
+    font-style: normal;
   }
 
   .supporting-text3 {
@@ -209,7 +220,8 @@
     display: flex;
     list-style: none;
     gap: 12px;
-    width: 235px;
+    width: 297px;
+    height: 48px;
     align-self: flex-start;
   }
 
@@ -261,9 +273,8 @@
     background-color: #ff6b00;
     color: #fff;
   }
-
-  .placeholder {
-    padding-top: 24px;
+  .butt1:hover{
+    background-color: brown;
   }
 
   .card-container {
@@ -279,7 +290,8 @@
   .card {
     display: flex;
     flex-direction: column;
-    width: 327px;
+    width: 369px;
+    /* height: 435px; */
     padding-top: 76px;
     gap: 14px;
     background-image: url("./img/card-bg1.png");
