@@ -8,6 +8,10 @@
     <title>Personal Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+    src="https://kit.fontawesome.com/bc4d064067.js"
+    crossorigin="anonymous"
+  ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Odibee+Sans&family=Poppins&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
@@ -32,18 +36,20 @@
             </ul>
           </nav>
         </div> -->
-        <div class="main-header">
-          <div>
-         <a class="main-header-logo">Festus</a>
+        <div class="main-header" id="mheader">
+          
+         <a class="main-header-logo" id="log-image">Festus</a>
          <button class="hamburger" id="Hamburger">
-          <img src="./img/Enabled.png" alt="hamburger menu">
+
+          <i class="fa fa-bars" id="bars"></i>
+          <i class="fa fa-times" aria-hidden="true" id="close"></i>
          </button>
-        </div>
-          <nav class="naviHeader">
+        
+          <nav class="naviHeader" id="nav-link">
             <ul class="navi-header-list">
-              <li class="navi-item"><a href="#" class="navi-link">Home</a></li>
-              <li class="navi-item"><a href="#" class="navi-link">About</a></li>
-              <li class="navi-item"><a href="#" class="navi-link">Contact</a></li>
+              <li class="navi-item" id="home"><a href="#section-1" class="navi-link">Home</a></li>
+              <li class="navi-item" id="about"><a href="#section-3" class="navi-link">About</a></li>
+              <li class="navi-item" id="contact"><a href="#section-4" class="navi-link">Contact</a></li>
               <li class="navi-item"><a class="navi-link"><img src="./img/Union.png" alt="icon"/></a></li>
             </ul>
           </nav>
@@ -52,7 +58,7 @@
         </div>      
       </header>
 
-      <section class="headline">
+      <section class="headline" id="section-1">
         <div class="pos">
           <h1 class="primary-text">
             Hey There.<br />
@@ -206,7 +212,7 @@
         </ul>
       </section>
 
-      <section class="about-section">
+      <secheadlinetion class="about-section" id="section-3">
         <div class="about-wrapper">
           <h2 class="about-title">About me</h2>
           <p class="supporting-text4">
@@ -257,7 +263,7 @@
         </div>
       </section>
       <footer>
-        <div class="flex-container">
+        <div class="flex-container" id="section-4">
           <p class="supporting-text5">
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
