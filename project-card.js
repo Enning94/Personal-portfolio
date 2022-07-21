@@ -1,31 +1,6 @@
-const { get } = require("http");
-
 const  project = 
   [  
-    {
-        Name:"Profesional Art Printing Data",
-        Description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        Featured_image:"/img/card-bg1.png",
-        Technologies: ["HTML",'css','ruby'],
-        livedemo: 'link to live version',
-        github: 'link to source',
-    },
-    {
-        Name:"Profesional Art Printing Data",
-        Description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        Featured_image:"/img/card-bg1.png",
-        Technologies: ["HTML",'css','ruby'],
-        livedemo: 'link to live version',
-        github: 'link to source',
-    },
-    {
-        Name:"Profesional Art Printing Data",
-        Description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        Featured_image:"/img/card-bg1.png",
-        Technologies: ["HTML",'css','ruby'],
-        livedemo: 'link to live version',
-        github: 'link to source',
-    },
+
     {
         Name:"Profesional Art Printing Data",
         Description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -65,7 +40,9 @@ const  project =
                 <li>${project[i].Technologies[2]}</li>
             </ul>
             </div>
-            <a href="#" target="_blank" class="butt1">See Project</a>
+            <button type="button" class="btn btn-primary model-button" data-bs-toggle="modal" data-bs-target="#myModal">
+            See Projects
+          </button>
      </li>`;
     }
     document.querySelector('.card-container').innerHTML = html;

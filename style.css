@@ -6,6 +6,46 @@
   text-decoration: none;
 }
 
+.modal-content .btn-close {
+  padding: 2rem;
+  
+}
+
+.modal-title-div ul {
+  display: flex;
+}
+.modal-title-div ul li {
+  margin-left: 1rem;
+}
+.modal-image-container {
+  display: flex;
+  
+}
+
+.modal-paragraph-container {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title-div ul li button {
+  padding: 5px 1.2rem;
+  outline: none;
+  border: none;
+}
+
+.modal-header-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.model-button {
+  background-color: #ff6b00;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
 header {
   background-color: #3c3a39;
 }
@@ -16,7 +56,7 @@ header {
 
 
 .popup-container {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
@@ -426,6 +466,7 @@ header {
     background-color: #ff6b00;
     color: #fff;
   }
+  
 
   .butt1 {
     text-align: center;
@@ -707,7 +748,7 @@ header {
 @media screen and (max-width: 768px) {
 
   .popup-container {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
