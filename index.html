@@ -8,38 +8,43 @@
     <title>Personal Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   
+
     <link
       href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Odibee+Sans&family=Poppins&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/a075d05399.js"></script>
- 
   </head>
 
   <body>
     <main>
       <header>
         <div class="main-header" id="mheader">
-          
-         <a class="main-header-logo" id="log-image">Festus</a>
-         <button class="hamburger" id="Hamburger" type="button">
+          <a class="main-header-logo" id="log-image">Festus</a>
+          <button class="hamburger" id="Hamburger" type="button">
+            <i class="fa fa-bars" id="bars"></i>
+            <i class="fa fa-times" aria-hidden="true" id="close"></i>
+          </button>
 
-          <i class="fa fa-bars" id="bars"></i>
-          <i class="fa fa-times" aria-hidden="true" id="close"></i>
-         </button>
-        
           <nav class="naviHeader" id="nav-link">
             <ul class="navi-header-list">
-              <li class="navi-item" id="home"><a href="#section-1" class="navi-link">Home</a></li>
-              <li class="navi-item" id="about"><a href="#section-3" class="navi-link">About</a></li>
-              <li class="navi-item" id="contact"><a href="#section-4" class="navi-link">Contact</a></li>
-              <li class="navi-item"><a class="navi-link"><img src="./img/Union.png" alt="icon"/></a></li>
+              <li class="navi-item" id="home">
+                <a href="#section-1" class="navi-link">Home</a>
+              </li>
+              <li class="navi-item" id="about">
+                <a href="#section-3" class="navi-link">About</a>
+              </li>
+              <li class="navi-item" id="contact">
+                <a href="#section-4" class="navi-link">Contact</a>
+              </li>
+              <li class="navi-item">
+                <a class="navi-link"
+                  ><img src="./img/Union.png" alt="icon"
+                /></a>
+              </li>
             </ul>
           </nav>
-         
-        
-        </div>      
+        </div>
       </header>
 
       <section class="headline" id="section-1">
@@ -72,7 +77,7 @@
             <a href="#"><img src="./img/Vector.png" alt="Vector logo" /></a>
           </li>
         </ul>
-      </section> 
+      </section>
 
       <section class="works-section">
         <div class="topic-wrapper">
@@ -93,8 +98,8 @@
               ever since the 1500s, when an unknown printer took a standard
               dummy text.
             </p>
-            <ul class="tags">
-              <li class="tag-text">css</li>
+             <ul class="tags"> 
+             <li class="tag-text">css</li>
               <li class="tag-text">html</li>
               <li class="tag-text">bootstrap</li>
               <li class="tag-text">ruby</li>
@@ -103,7 +108,7 @@
           </div>
         </div>
         <ul class="card-container">
-          <li class="card">
+          <!-- <li class="card">
             <div class="card-summary">
               <h3 class="title">Profesional Art Printing Data</h3>
               <p class="supporting-text3">
@@ -191,9 +196,9 @@
                 <li>ruby</li>
               </ul>
             </div>
-            <a href="#" target="_blank" class="butt1">See Project</a>
-          </li>
-        </ul>
+            <button class="butt1" id="popup">See Project</button>
+          </li> -->
+         </ul>  
       </section>
 
       <section class="about-section" id="section-3">
@@ -245,6 +250,85 @@
             </ul>
           </div>
         </div>
+
+            <!--POPUP WINDOW-BEGIN-->
+       <div class='popup-container' id='Popup'>
+          <div class='popup'>
+          
+            <!-- Modal content-->
+            <div class='modal-container'>
+               <div class='btn-wrapper'>
+                <button type='button' class='close-btn' data-dismiss='modal'>&times;</button> 
+                <h4 class='project-title'>Multi Post Stories</h4>
+              </div>
+              <!-- <div class='modal-content'> -->
+               
+              <div class='technology-list'>
+                <ul class="tags"> 
+                  <li class="tag-text">css</li>
+                   <li class="tag-text">html</li>
+                   <li class="tag-text">bootstrap</li>
+                   <li class="tag-text">ruby</li>
+                 </ul>
+              </div>
+              <div class='modal-img-container'>
+                <div class='modal-img'>
+                  <img src='./img/popup.png' alt='SnapshootPortfolio'>
+                </div>
+                <div class='project-content'>
+                  <div class='supporting-text7'>
+                    Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                     but also the leap into electronic typesetting, remaining essent
+                  </div>
+                  <div class='modal-btn'>
+                    <button type='button' class='bottom-btn' ><a href='${projects[0].livedemo}'>See Live</a><i class='fa fa-external-link' aria-hidden='true'></i></button>
+                    <button type='button' class='bottom-btn'><a href='${projects[0].sourceCode}'>See Source</a><i class='fa fa-github' aria-hidden='true'></i></button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div> 
+
+<!-- 
+        <div class="modal-container" id="modal_container">
+          <div class="modal">
+            <div class="fl1">
+            <h1>Multi Post Stories</h1> 
+            <img src="./img/github-bott.png" alt=""> 
+          </div>
+            <ul class="tags">
+              <li class="tag-text">css</li>
+              <li class="tag-text">html</li>
+              <li class="tag-text">bootstrap</li>
+              <li class="tag-text">ruby</li>
+            </ul>
+           <div class="fl2">
+            <img src="./img/popup.png" alt="" />
+            <div class="fl3">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+            <div class="popup-btn">
+              <button class="btn1" id="shut">1st btn</button>
+              <button class="btn2">2nd btn</button>
+            </div>
+          </div> 
+      </div>
+        </div>
+        </div> 
+        <!--POPUP WINDOW-END-->
+
       </section>
       <footer>
         <div class="flex-container" id="section-4">
@@ -325,7 +409,10 @@
         </div>
       </footer>
     </main>
-    <script src="https://kit.fontawesome.com/bc4d064067.js" crossorigin="anonymous"></script>
-    <script src="./script.js" ></script>
+    <script
+      src="https://kit.fontawesome.com/bc4d064067.js"
+      crossorigin="anonymous" ></script>
+    <script src="./script.js"></script>
+    <script src="./project-card.js"></script>
   </body>
 </html>
