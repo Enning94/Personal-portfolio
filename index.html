@@ -187,6 +187,7 @@
             action="https://formspree.io/f/xknylopq"
             method="POST"
             class="flex-2"
+            id="formField"
           >
             <ul class="form-ul">
               <li>
@@ -196,6 +197,7 @@
                   required
                   maxlength="30"
                   name="Name"
+                  id="formName"
                 />
               </li>
               <li>
@@ -204,6 +206,7 @@
                   placeholder="Email address"
                   required
                   name="Email"
+                  id="formEmail"
                 />
               </li>
               <li>
@@ -212,11 +215,12 @@
                   maxlength="500"
                   placeholder="Enter text here"
                   name="Message"
+                  id="formMessage"
                 >
                 </textarea>
               </li>
             </ul>
-            <button type="submit" class="form-butt">Get in touch</button>
+            <button type="submit" class="form-butt" id="btn-submit">Get in touch</button>
           </form>
         </div>
         <div class="flex-3">
@@ -261,5 +265,6 @@
       crossorigin="anonymous" ></script>
     <script src="./script.js"></script>
     <script src="./project-card.js"></script>
+    <script src="./form_validation.js"></script>
   </body>
 </html>
