@@ -1,37 +1,58 @@
-const  project = 
-  [  
-
-    {
-        Name:"Profesional Art Printing Data",
-        Description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        Featured_image:"/img/card-bg1.png",
-        Technologies: ["HTML",'css','ruby'],
-        livedemo: 'link to live version',
-        github: 'link to source',
-    },
-    {
-        Name:"Profesional Art Printing Data",
-        Description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        Featured_image:"/img/card-bg1.png",
-        Technologies: ["HTML",'css','ruby'],
-        livedemo: 'link to live version',
-        github: 'link to source',
-    },
-    {
-        Name:"Profesional Art Printing Data",
-        Description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        Featured_image:"/img/card-bg1.png",
-        Technologies: ["HTML",'css','ruby'],
-        livedemo: 'link to live version',
-        github: 'link to source',
-    }
-
-]
- function getProject(project) {
-    let html =``;
-    for(let i = 0; i<project.length ; i++){
-        html += ` <li class="card"'>
-        <div class="card-summary">
+const project = [
+  {
+    Name: 'Profesional Art Printing Data',
+    Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Featured_image: '/img/card-bg1.png',
+    Technologies: ['HTML', 'css', 'ruby'],
+    liveVersion: 'https://enning94.github.io/Personal-portfolio/',
+    sourceLink: 'https://github.com/Enning94/Personal-portfolio',
+  },
+  {
+    Name: 'Profesional Art Printing Data',
+    Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Featured_image: '/img/card-bg1.png',
+    Technologies: ['HTML', 'css', 'ruby'],
+    liveVersion: 'https://enning94.github.io/Personal-portfolio/',
+    sourceLink: 'https://github.com/Enning94/Personal-portfolio',
+  },
+  {
+    Name: 'Profesional Art Printing Data',
+    Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Featured_image: '/img/card-bg1.png',
+    Technologies: ['HTML', 'css', 'ruby'],
+    liveVersion: 'https://enning94.github.io/Personal-portfolio/',
+    sourceLink: 'https://github.com/Enning94/Personal-portfolio',
+  },
+  {
+    Name: 'Profesional Art Printing Data',
+    Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Featured_image: '/img/card-bg1.png',
+    Technologies: ['HTML', 'css', 'ruby'],
+    liveVersion: 'https://enning94.github.io/Personal-portfolio/',
+    sourceLink: 'https://github.com/Enning94/Personal-portfolio',
+  },
+  {
+    Name: 'Profesional Art Printing Data',
+    Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Featured_image: '/img/card-bg1.png',
+    Technologies: ['HTML', 'css', 'ruby'],
+    liveVersion: 'https://enning94.github.io/Personal-portfolio/',
+    sourceLink: 'https://github.com/Enning94/Personal-portfolio',
+  },
+  {
+    Name: 'Profesional Art Printing Data',
+    Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    Featured_image: '/img/card-bg1.png',
+    Technologies: ['HTML', 'css', 'ruby'],
+    liveVersion: 'https://enning94.github.io/Personal-portfolio/',
+    sourceLink: 'https://github.com/Enning94/Personal-portfolio',
+  },
+];
+function getProject(project) {
+  let html = '';
+  for (let i = 0; i < project.length; i += 1) {
+    html += ` <li class='card''>
+        <div class='card-summary'>
             <h3 class='title'>${project[i].Name}</h3>
             <p class='surpporting-text3'>${project[i].Description} </p>
             <ul class='tags'>
@@ -40,58 +61,66 @@ const  project =
                 <li>${project[i].Technologies[2]}</li>
             </ul>
             </div>
-            <button type="button" class="btn btn-primary model-button" data-bs-toggle="modal" data-bs-target="#myModal">
+          
+            <button type='button' class='butt1 model-button ' data-bs-toggle='modal' data-bs-target='#myModal'>
             See Projects
           </button>
      </li>`;
-    }
-    document.querySelector('.card-container').innerHTML = html;
-    
+  }
+  document.querySelector('.card-container').innerHTML = html;
 }
 getProject(project);
 
-// function popupWindow(){
-//     let html=``;
-//     html+=` <div class='popup-container' id='Popup'>
-//     <div class='popup'>
-
-//       <div class='modal-container'>
-//          <div class='btn-wrapper'>
-//           <button type='button' class='close-btn' data-dismiss='modal'>&times;</button> 
-//           <h4 class='project-title'>Multi Post Stories</h4>
-//         </div>
-         
-//         <div class='technology-list'>
-//           <ul class="tags"> 
-//             <li class="tag-text">css</li>
-//              <li class="tag-text">html</li>
-//              <li class="tag-text">bootstrap</li>
-//              <li class="tag-text">ruby</li>
-//            </ul>
-//         </div>
-//         <div class='modal-img-container'>
-//           <div class='modal-img'>
-//             <img src='./img/popup.png' alt='SnapshootPortfolio'>
-//           </div>
-//           <div class='project-content'>
-//             <div class='supporting-text7'>
-//               Lorem Ipsum is simply dummy text of the printing 
-//               and typesetting industry. Lorem Ipsum has been the industry's 
-//               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-//                but also the leap into electronic typesetting, remaining essent
-//             </div>
-//             <div class='modal-btn'>
-//               <button type='button' class='bottom-btn' ><a href='${projects[0].livedemo}'>See Live</a><i class='fa fa-external-link' aria-hidden='true'></i></button>
-//               <button type='button' class='bottom-btn'><a href='${projects[0].sourceCode}'>See Source</a><i class='fa fa-github' aria-hidden='true'></i></button>
-//             </div>
-//           </div>
-//         </div>
-//         </div>
+function popupWindow() {
+  let html = '';
+  html += `
+        <!-- The Modal -->
+        <div class='modal' id='myModal'>
+          <div class='modal-dialog modal-xl'>
+            <div class='modal-content'>
         
-//       </div>
-      
-//     </div>
-//   </div> `
-// }
-// document.querySelector('popup-container').innerHTML=html;
-// popupWindow();
+              <!-- Modal Header -->
+             
+                <div class='modal-header-wrapper'>
+                <div class='modal-title'>
+                <h3>Multi Post Stories</h3>
+              </div>
+                <button type='button' class='btn-close close-button' data-bs-dismiss='modal'></button>
+                </div>
+             
+              
+              <!-- Modal body -->
+              <div class='modal-body'>
+                <div class='modal-title-div'>
+                  <ul>
+                    <li><button type='button'>html</button></li>
+                    <li><button type='button'>Bootstrap</button></li>
+                    <li><button type='button'>Ruby on rails</button></li>
+                  </ul>
+                </div>
+                
+                <div class='modal-image-container'>
+                  <div class='modal-image'>
+                    <img class='modal-image1' src='./img/popup.png' alt='modal image'>
+                  </div>
+                  
+                <div class='modal-paragraph-container'>
+                  <div class='modal-paragraph'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    . Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+                    galley of type and scrambled it 1960s with the releax map lapora verita.
+                  </div>
+                  <div class='modal-buttons-cont'>
+                    <button type='button' class='btn btn-danger model-button '><a href='${project[0].liveVersion}'>See Live </a><i class='fa fa-external-link' aria-hidden='true'></i></button>
+                    <button type='button' class='btn btn-danger model-button '><a href='${project[1].sourceLink}'>See Source </a><i class='fa fa-github' aria-hidden='true'></i></button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+  document.querySelector('.container').innerHTML = html;
+}
+
+popupWindow();
