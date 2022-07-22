@@ -34,6 +34,7 @@ header {
 
   .modal-content {
     height: auto;
+    width: 100%;
   }
 
   .modal-body {
@@ -238,6 +239,7 @@ header {
     grid-gap: 24px;
     width: 100%;
     background-color: #fff;
+    padding-left: 7rem;
   }
 
   .topic-wrapper {
@@ -327,7 +329,7 @@ header {
     padding: 10px 12px;
     background-color: rgba(255, 255, 255, 0.244);
     flex-direction: row;
-    align-items: center;
+    text-align: center;
     width: 95px;
     height: 40px;
   }
@@ -1152,12 +1154,12 @@ header {
   }
 
   .modal-body {
-    align-self: flex-start;
+    align-self: center;
   }
 
   .modal-content {
     display: flex;
-    width: 343px;
+    width: max-content;
   }
 
   .modal-content .btn-close {
@@ -1175,7 +1177,6 @@ header {
   .modal-image-container {
     display: flex;
     flex-direction: column;
-    width: 311px;
   }
 
   .modal-paragraph-container {
@@ -1202,7 +1203,6 @@ header {
   }
 
   .modal-paragraph {
-    width: 311px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1211,6 +1211,7 @@ header {
     color: #344563;
     margin-top: 25px;
     margin-bottom: 25px;
+    width: 357px;
   }
 
   .model-button {
@@ -1225,8 +1226,15 @@ header {
     font-family: "Inter", sans-serif;
   }
 
+  main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .modal-buttons-cont {
     display: flex;
-    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+    align-self: center;
   }
 }
