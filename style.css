@@ -10,7 +10,112 @@ header {
   background-color: #3c3a39;
 }
 
+.btn > a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
+  .modal-content .btn-close {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+
+  .modal-title {
+    display: flex;
+    color: #172b4d;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .modal-content {
+    height: auto;
+    width: 100%;
+  }
+
+  .modal-body {
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-title-div ul {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .modal-image-container {
+    display: flex;
+    height: auto;
+    width: auto;
+    gap: 12px;
+  }
+
+  .modal-image {
+    width: auto;
+    height: auto;
+    flex: 1;
+  }
+
+  .modal-image1 {
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-paragraph-container {
+    flex-direction: column;
+    flex: 3;
+  }
+
+  .modal-paragraph {
+    margin-bottom: 7.5rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    width: 100%;
+  }
+
+  .modal-title-div ul li button {
+    border: 1px solid #ebecf0;
+    background-color: white;
+    color: #3c3a39;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 5px 0.9rem;
+    margin-bottom: 3rem;
+  }
+
+  .modal-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+  }
+
+  .model-button {
+    background-color: #ff6b00;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+  }
+
   .main-header {
     display: flex;
     justify-content: space-between;
@@ -38,6 +143,7 @@ header {
     align-self: center;
     font-size: 20px;
     font-weight: 400;
+    text-decoration: none;
   }
 
   .hamburger {
@@ -143,18 +249,16 @@ header {
     grid-template-rows: auto;
     grid-gap: 24px;
     width: 100%;
-    justify-items: center;
     background-color: #fff;
+    padding-left: 9rem;
+    padding-right: 2rem;
   }
 
   .topic-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
     gap: 24px;
-    width: 100%;
-    flex-wrap: wrap;
   }
 
   .topic {
@@ -162,30 +266,27 @@ header {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    width: 315px;
     line-height: 52px;
     color: #091e42;
+    text-align: left;
   }
 
   .underline {
     align-self: center;
-    width: 794px;
+    flex: 1;
   }
 
   .title-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
     gap: 24px;
-    justify-content: center;
     padding-top: 24px;
-    height: 448px;
   }
 
-  .placeholder {
-    width: 684px;
-    height: 100%;
+  .img-placeholder {
+    width: auto;
+    height: auto;
+    flex: 1;
   }
 
   .title-wrapper {
@@ -193,8 +294,9 @@ header {
     flex-direction: column;
     gap: 24px;
     color: #091e42;
-    width: 448px;
-    height: 348px;
+    width: 100%;
+    align-items: flex-start;
+    flex: 1;
   }
 
   .title {
@@ -209,18 +311,15 @@ header {
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
-    width: 327px;
-    width: 448px;
-    height: 140px;
     font-style: normal;
   }
 
   .supporting-text3 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
-    width: 295px;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .tags {
@@ -230,6 +329,7 @@ header {
     width: 297px;
     height: 48px;
     align-self: flex-start;
+    padding-left: 0;
   }
 
   .tags > li {
@@ -240,7 +340,7 @@ header {
     padding: 10px 12px;
     background-color: rgba(255, 255, 255, 0.244);
     flex-direction: row;
-    align-items: center;
+    text-align: center;
     width: 95px;
     height: 40px;
   }
@@ -288,12 +388,11 @@ header {
 
   .card-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 1156px;
+    width: 100%;
     gap: 24px;
     padding-bottom: 100px;
+    padding-left: 0;
   }
 
   .card {
@@ -532,7 +631,7 @@ header {
   }
 }
 
-.fa.fa-bars {
+.fa-bars {
   font-size: 25px;
   color: #e5e5e5;
 }
@@ -556,12 +655,6 @@ header {
 
   .navi-header-list {
     display: none;
-  }
-
-  .show {
-    display: block;
-    width: 50px;
-    font-size: 25px;
   }
 
   .main-header.wrap button .fa-bars {
@@ -621,6 +714,7 @@ header {
     align-self: center;
     font-size: 30px;
     font-weight: 400;
+    text-decoration: none;
   }
 
   .naviHeader.open {
@@ -637,6 +731,7 @@ header {
     font-size: 32px;
     line-height: 44px;
     padding-left: 16px;
+    text-decoration: none;
   }
 
   .hamburger {
@@ -743,18 +838,9 @@ header {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 24px;
-    width: 100%;
     justify-items: center;
     background-color: #fff;
-  }
-
-  .topic-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    gap: 24px;
-    flex-wrap: wrap;
+    margin: 1rem;
   }
 
   .topic {
@@ -766,10 +852,6 @@ header {
     color: #091e42;
   }
 
-  .underline {
-    align-self: flex-end;
-  }
-
   .title-container {
     display: flex;
     flex-direction: row;
@@ -777,7 +859,6 @@ header {
     width: 100%;
     gap: 24px;
     justify-content: center;
-    padding-top: 24px;
   }
 
   .title-wrapper {
@@ -785,7 +866,7 @@ header {
     flex-direction: column;
     gap: 12px;
     color: #091e42;
-    align-items: center;
+    width: 100%;
   }
 
   .title {
@@ -800,23 +881,14 @@ header {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    width: 327px;
-  }
-
-  .supporting-text3 {
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    width: 295px;
   }
 
   .tags {
     display: flex;
     list-style: none;
     gap: 12px;
-    width: 235px;
-    align-self: flex-start;
+    padding-left: 0;
+    width: 65px;
   }
 
   .tag-text {
@@ -837,36 +909,21 @@ header {
     line-height: 24px;
     padding: 12px;
     font-size: 17px;
-    width: 124px;
     background-color: #ff6b00;
     color: #fff;
   }
 
-  .butt1 {
-    text-align: center;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    line-height: 24px;
-    padding: 12px;
-    font-size: 17px;
+  .img-placeholder {
     width: 100%;
-    background-color: #ff6b00;
-    color: #fff;
-  }
-
-  .placeholder {
-    padding-top: 24px;
   }
 
   .card-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     gap: 24px;
-    padding-bottom: 100px;
+    padding-left: 0;
   }
 
   .card {
@@ -876,9 +933,11 @@ header {
     padding-top: 76px;
     gap: 14px;
     background-image: url("./img/card-bg1.png");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center top -10px;
+    border-radius: 0;
+    border: none;
   }
 
   .card-summary {
@@ -1020,7 +1079,6 @@ header {
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
-    width: 327px;
     gap: 24px;
     padding-bottom: 50px;
   }
@@ -1096,5 +1154,111 @@ header {
     margin-bottom: 25px;
     background-color: #fbf8f7;
     height: 114px;
+  }
+
+  .container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .modal-body {
+    align-self: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-content .btn-close {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .modal-title-div ul {
+    display: flex;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .modal-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .modal-image1 {
+    width: 100%;
+    height: 170px;
+  }
+
+  .modal-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .modal-title-div ul li button {
+    padding: 5px 0.9rem;
+    border: 1px solid #ebecf0;
+    background-color: white;
+    color: #3c3a39;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .modal-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 1px 20px;
+  }
+
+  .modal-paragraph {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #344563;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+  }
+
+  .model-button {
+    background-color: #ff6b00;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+  }
+
+  main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .modal-buttons-cont {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-self: center;
   }
 }
