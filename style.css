@@ -39,6 +39,8 @@ header {
 
   .modal-body {
     padding-top: 0;
+    width: 100%;
+    height: auto;
   }
 
   .modal-title-div ul {
@@ -51,17 +53,25 @@ header {
 
   .modal-image-container {
     display: flex;
+    height: auto;
+    width: auto;
     gap: 12px;
   }
 
-  .modal-image1 {
-    height: 448px;
+  .modal-image {
     width: auto;
+    height: auto;
+    flex: 1;
+  }
+
+  .modal-image1 {
+    height: 100%;
+    width: 100%;
   }
 
   .modal-paragraph-container {
-    display: flex;
     flex-direction: column;
+    flex: 3;
   }
 
   .modal-paragraph {
@@ -72,6 +82,7 @@ header {
     font-size: 16px;
     line-height: 30px;
     color: #344563;
+    width: 100%;
   }
 
   .modal-title-div ul li button {
@@ -239,15 +250,15 @@ header {
     grid-gap: 24px;
     width: 100%;
     background-color: #fff;
-    padding-left: 7rem;
+    padding-left: 9rem;
+    padding-right: 2rem;
   }
 
   .topic-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0;
     gap: 24px;
-    width: 100%;
   }
 
   .topic {
@@ -258,12 +269,11 @@ header {
     line-height: 52px;
     color: #091e42;
     text-align: left;
-    margin-left: 2rem;
   }
 
   .underline {
     align-self: center;
-    width: 50%;
+    flex: 1;
   }
 
   .title-container {
@@ -271,12 +281,12 @@ header {
     width: 100%;
     gap: 24px;
     padding-top: 24px;
-    margin-left: 2rem;
   }
 
   .img-placeholder {
     width: auto;
-    height: 448px;
+    height: auto;
+    flex: 1;
   }
 
   .title-wrapper {
@@ -284,9 +294,9 @@ header {
     flex-direction: column;
     gap: 24px;
     color: #091e42;
-    width: 448px;
+    width: 100%;
     align-items: flex-start;
-    height: 348px;
+    flex: 1;
   }
 
   .title {
@@ -307,8 +317,9 @@ header {
   .supporting-text3 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .tags {
@@ -377,11 +388,11 @@ header {
 
   .card-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     gap: 24px;
     padding-bottom: 100px;
+    padding-left: 0;
   }
 
   .card {
@@ -720,6 +731,7 @@ header {
     font-size: 32px;
     line-height: 44px;
     padding-left: 16px;
+    text-decoration: none;
   }
 
   .hamburger {
@@ -1151,15 +1163,19 @@ header {
     flex-direction: column;
     padding: 16px;
     gap: 24px;
+    flex-wrap: wrap;
   }
 
   .modal-body {
     align-self: center;
+    width: 100%;
+    height: auto;
   }
 
   .modal-content {
     display: flex;
-    width: max-content;
+    width: 100%;
+    height: auto;
   }
 
   .modal-content .btn-close {
@@ -1177,11 +1193,18 @@ header {
   .modal-image-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .modal-image1 {
+    width: 100%;
+    height: 170px;
   }
 
   .modal-paragraph-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .modal-title-div ul li button {
@@ -1199,7 +1222,7 @@ header {
   .modal-header-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 20px 20px 40px 20px;
+    margin: 10px 20px 1px 20px;
   }
 
   .modal-paragraph {
@@ -1207,11 +1230,12 @@ header {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
     color: #344563;
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 357px;
+    width: 100%;
+    height: auto;
   }
 
   .model-button {
