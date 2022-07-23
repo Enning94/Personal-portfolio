@@ -547,15 +547,17 @@ header {
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
-    width: auto;
+    width: 100%;
     height: auto;
     gap: 24px;
     padding-bottom: 50px;
     margin-left: 25px;
+    flex: 1;
   }
 
   .flex-2 {
-    width: 684px;
+    width: 100%;
+    flex: 1;
   }
 
   .form-ul {
