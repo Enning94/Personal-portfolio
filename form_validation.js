@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
   }
 
   if (!isValidEmail(email.value)) {
-    message.push('Form Unable to submit, Email should be in Lower case');
+    message.push('Please enter email in right format, Email should be in Lower case');
   }
 
   if (message.length > 0) {

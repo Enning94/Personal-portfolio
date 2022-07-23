@@ -18,12 +18,8 @@ header {
 #Error {
   color: red;
   background-color: wheat;
-  width: 50%;
-  border: 1px solid black;
+  width: 80%;
   margin-bottom: 1rem;
-  text-align: center;
-  margin-left: 2rem;
-  margin-left: 7rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -622,7 +618,7 @@ header {
   input,
   textarea {
     width: 648px;
-    padding: 25px;
+    padding: 10px;
     font-family: "Inter", serif;
     font-style: normal;
     font-weight: 400;
