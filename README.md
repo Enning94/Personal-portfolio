@@ -1,7 +1,6 @@
 # Personal-Portfolio
 
-> This is a Microverse project to design a mobile version skeleton of a chosen figma portfolio.  
-
+> This is my personal portfolio that displays projects i've built. This project wuill be updated overtime with new projects. 
 ## Built With
 
 - HTML & CSS
