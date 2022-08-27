@@ -8,7 +8,7 @@
 
 ## Link to Online Version
 
--https://enning94.github.io/Personal-portfolio/
+- https://enning94.github.io/Personal-portfolio/
 
 ## Author
 
