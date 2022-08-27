@@ -65,6 +65,10 @@ header {
     gap: 12px;
   }
 
+  .img-placeholder {
+    width: 50%;
+  }
+
   .modal-image {
     width: auto;
     height: auto;
@@ -290,7 +294,7 @@ header {
     padding-top: 24px;
   }
 
-  .img-placeholder {
+  .ceholder {
     width: auto;
     height: auto;
     flex: 1;
@@ -922,6 +926,7 @@ header {
 
   .img-placeholder {
     width: 100%;
+    background-color: red;
   }
 
   .card-container {
