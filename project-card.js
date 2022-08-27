@@ -101,7 +101,7 @@ function popupWindow() {
                 
                 <div class='modal-image-container'>
                   <div class='modal-image'>
-                    <img class='modal-image1' src='./img/popup.png' alt='modal image'>
+                    <img class='modal-image1' src='./img/Todo.png' alt='modal image'>
                   </div>
                   
                 <div class='modal-paragraph-container'>
