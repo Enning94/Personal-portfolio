@@ -64,9 +64,11 @@ header {
     width: auto;
     gap: 12px;
   }
+
   .img-placeholder {
-    width: 50%; 
+    width: 50%;
   }
+
   .modal-image {
     width: auto;
     height: auto;
