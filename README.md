@@ -1,6 +1,7 @@
 # Personal-Portfolio
 
-> This is my personal portfolio that displays projects i've built. This project wuill be updated overtime with new projects. 
+> This is my portfolio that displays projects I've built. It is built with HTML, CSS, and Javascript. This portfolio will be updated over time to display new projects I've worked on. 
+
 ## Built With
 
 - HTML & CSS
